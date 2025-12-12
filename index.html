@@ -1,43 +1,158 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>MONBOY</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MONBOY • Monad Memecoin</title>
+  <meta name="description" content="MONBOY — Monad memecoin powered by community and memes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="bg">
+    <div class="vines"></div>
+    <div class="hills"></div>
+  </div>
 
-<div class="grain"></div>
+  <header class="topbar">
+    <div class="navwrap">
+      <div class="brand">
+        <div class="logo-bubble">MB</div>
+        <div class="brandtext">
+          <div class="name">MONBOY</div>
+          <div class="sub">Monad memecoin</div>
+        </div>
+      </div>
 
-<header class="nav">
-  <div class="logo">MONBOY</div>
-</header>
+      <nav class="navlinks">
+        <a href="#about">ABOUT</a>
+        <a href="#tokenomics">TOKENOMICS</a>
+        <a href="#roadmap">ROADMAP</a>
+        <a href="#community">COMMUNITY</a>
+      </nav>
 
-<!-- HERO -->
-<section class="section hero">
-  <h1>MONBOY</h1>
-  <p>Community driven culture</p>
-  <a class="link" href="https://x.com/monboynfts" target="_blank">X / Twitter</a>
-</section>
+      <div class="actions">
+        <a class="iconbtn" href="https://x.com/monboynfts" target="_blank" rel="noreferrer" aria-label="X">✕</a>
+        <a class="iconbtn" href="https://t.me/monboynft" target="_blank" rel="noreferrer" aria-label="Telegram">✈</a>
+        <a class="cta" href="#how">BUY NOW</a>
+      </div>
 
-<!-- SECTION 2 -->
-<section class="section info">
-  <h2>ABOUT</h2>
-  <p>
-    MONBOY is a pixel-powered memecoin and NFT culture project built by the community.
-    Inspired by internet creativity and on-chain experimentation.
-  </p>
-</section>
+      <button class="burger" id="burger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
 
-<!-- SECTION 3 -->
-<section class="section footer-section">
-  <span>© 2025 MONBOY</span>
-</section>
+    <div class="mobile" id="mobileMenu">
+      <a href="#about">ABOUT</a>
+      <a href="#tokenomics">TOKENOMICS</a>
+      <a href="#roadmap">ROADMAP</a>
+      <a href="#community">COMMUNITY</a>
+      <div class="sep"></div>
+      <a class="pill" href="https://x.com/monboynfts" target="_blank" rel="noreferrer">X</a>
+      <a class="pill" href="https://t.me/monboynft" target="_blank" rel="noreferrer">Telegram</a>
+      <a class="pill primary" href="#how">BUY NOW</a>
+    </div>
+  </header>
 
+  <main class="page">
+    <section class="hero" id="top">
+      <div class="mascot">
+        <img src="monboy.png" alt="MONBOY art" />
+        <div class="shadow"></div>
+      </div>
+
+      <div class="heroText">
+        <h1 class="headline">
+          <span class="stroke">MONBOY</span>
+          <span class="fill">WAS BORN</span>
+        </h1>
+        <p class="tagline">BE LAZY, MEME IS EAZZZY</p>
+
+        <div class="btnrow">
+          <a class="bigbtn pink" href="#how">PRESALE LIVE</a>
+          <button class="bigbtn soft" id="copyBtn">COPY CA</button>
+        </div>
+
+        <div class="caCard">
+          <div class="label">CONTRACT ADDRESS</div>
+          <div class="ca mono" id="caText">0xa4105C0509bb414074fB1C850c046f8FdB847777</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="card">
+        <h2>About MONBOY</h2>
+        <p>
+          MONBOY is a community memecoin on <b>Monad</b>. Simple, fun, and built for attention.
+          No complicated promises — just memes, momentum, and a clean launch.
+        </p>
+      </div>
+    </section>
+
+    <section class="section grid" id="tokenomics">
+      <div class="card">
+        <h2>Tokenomics</h2>
+        <div class="stats">
+          <div class="stat"><div class="k">NETWORK</div><div class="v">Monad</div></div>
+          <div class="stat"><div class="k">SUPPLY</div><div class="v">1 MONBOY</div></div>
+          <div class="stat"><div class="k">TAX</div><div class="v">0%</div></div>
+          <div class="stat"><div class="k">LP</div><div class="v">Locked / Burned</div></div>
+        </div>
+      </div>
+
+      <div class="card" id="how">
+        <h2>How to buy</h2>
+        <ol class="how">
+          <li>Install a wallet (MetaMask / Rabby / Coinbase Wallet).</li>
+          <li>Switch network to <b>Monad</b>.</li>
+          <li>Copy the contract address and swap on your preferred DEX.</li>
+        </ol>
+        <div class="btnrow small">
+          <a class="bigbtn soft" href="https://x.com/monboynfts" target="_blank" rel="noreferrer">X</a>
+          <a class="bigbtn soft" href="https://t.me/monboynft" target="_blank" rel="noreferrer">Telegram</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="roadmap">
+      <div class="card">
+        <h2>Roadmap</h2>
+        <div class="road">
+          <div class="step"><div class="num">01</div><div><div class="t">Launch</div><div class="d">Website • socials • memes • community push</div></div></div>
+          <div class="step"><div class="num">02</div><div><div class="t">Growth</div><div class="d">Listings • partnerships • raids • content</div></div></div>
+          <div class="step"><div class="num">03</div><div><div class="t">Expansion</div><div><div class="d">Bigger campaigns • tools (optional) • more memes</div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="community">
+      <div class="card">
+        <h2>Community</h2>
+        <p>Join the MONBOY community and help it go viral.</p>
+        <div class="btnrow small">
+          <a class="bigbtn soft" href="https://x.com/monboynfts" target="_blank" rel="noreferrer">X (Twitter)</a>
+          <a class="bigbtn soft" href="https://t.me/monboynft" target="_blank" rel="noreferrer">Telegram</a>
+        </div>
+      </div>
+      <div class="ticker" aria-hidden="true">
+        <div class="track">
+          <span>$ MONBOY</span><span>$ MONBOY</span><span>$ MONBOY</span><span>$ MONBOY</span><span>$ MONBOY</span><span>$ MONBOY</span>
+          <span>$ MONBOY</span><span>$ MONBOY</span><span>$ MONBOY</span><span>$ MONBOY</span><span>$ MONBOY</span><span>$ MONBOY</span>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> MONBOY</span>
+      <span class="dot">•</span>
+      <a href="#top">Back to top</a>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast">Copied!</div>
+  <script src="app.js"></script>
 </body>
 </html>
