@@ -1,12 +1,17 @@
-// minimal smooth reveal on scroll
-const els=document.querySelectorAll('.about, .buttons');
-const io=new IntersectionObserver(e=>{
-e.forEach(x=>{
-if(x.isIntersecting)x.target.style.opacity=1
-})
-},{threshold:.2});
-els.forEach(el=>{
-el.style.opacity=0;
-el.style.transition='1s';
-io.observe(el)
+// reveal on scroll
+const sections = document.querySelectorAll('.section');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.opacity = 1;
+      e.target.style.transform = 'none';
+    }
+  });
+}, { threshold: 0.4 });
+
+sections.forEach(s => {
+  s.style.opacity = 0;
+  s.style.transform = 'translateY(30px)';
+  s.style.transition = '1s';
+  io.observe(s);
 });
