@@ -1,72 +1,88 @@
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Inter', sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:Inter,sans-serif}
+body{
+background:#0a0a0c;
+color:#fff;
+overflow-x:hidden
 }
-
-body {
-  background: #0b0b0d;
-  color: #ffffff;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+.nav{
+position:fixed;
+top:0;
+width:100%;
+padding:20px;
+text-align:center;
+backdrop-filter:blur(10px);
+z-index:10
 }
-
-.hero {
-  text-align: center;
-  margin-top: 80px;
+.nav-logo{
+font-weight:800;
+letter-spacing:-1px
 }
-
-.logo {
-  font-size: 64px;
-  font-weight: 800;
-  letter-spacing: -2px;
+.hero{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px
 }
-
-.subtitle {
-  margin-top: 12px;
-  opacity: 0.7;
+.hero h1{
+font-size:84px;
+font-weight:800;
+letter-spacing:-3px;
+animation:fadeUp 1s ease forwards
 }
-
-.links {
-  display: flex;
-  gap: 16px;
-  margin: 60px 0;
-  flex-wrap: wrap;
-  justify-content: center;
+.hero p{
+margin-top:16px;
+opacity:.7;
+animation:fadeUp 1.2s ease forwards
 }
-
-.btn {
-  padding: 14px 28px;
-  border-radius: 40px;
-  border: 1px solid #ffffff33;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease;
+.buttons{
+display:flex;
+justify-content:center;
+gap:18px;
+margin-bottom:120px;
+flex-wrap:wrap
 }
-
-.btn:hover {
-  background: #ffffff;
-  color: #000;
+.btn{
+padding:14px 34px;
+border-radius:40px;
+border:1px solid #ffffff33;
+color:#fff;
+text-decoration:none;
+transition:.3s
 }
-
-.primary {
-  background: #ffffff;
-  color: #000;
+.btn:hover{
+background:#fff;
+color:#000
 }
-
-footer {
-  margin-bottom: 24px;
-  opacity: 0.4;
-  font-size: 14px;
+.primary{
+background:#fff;
+color:#000
 }
-
-@media (max-width: 600px) {
-  .logo {
-    font-size: 42px;
-  }
+.about{
+max-width:700px;
+margin:0 auto 140px;
+padding:0 20px;
+text-align:center;
+opacity:.85
+}
+.about h2{
+font-size:14px;
+letter-spacing:2px;
+margin-bottom:20px;
+opacity:.6
+}
+footer{
+text-align:center;
+padding:40px;
+opacity:.4;
+font-size:14px
+}
+@keyframes fadeUp{
+from{opacity:0;transform:translateY(20px)}
+to{opacity:1;transform:none}
+}
+@media(max-width:600px){
+.hero h1{font-size:48px}
 }
