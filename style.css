@@ -367,3 +367,63 @@ body > * {
   position: relative;
   z-index: 1;
 }
+/* =============================== */
+/* LIGHT CONTENT BLOCKS ON BG      */
+/* =============================== */
+
+/* універсальний стиль для всіх блоків */
+.card,
+.section,
+.box,
+.block,
+.ca,
+.navwrap,
+.topbar,
+.hero-inner,
+.center,
+.content,
+.container {
+  background: rgba(255,255,255,0.92) !important;
+  color: #000 !important;
+  border-radius: 20px;
+  border: 3px solid #000;
+  box-shadow: 0 12px 0 rgba(0,0,0,0.25);
+}
+
+/* відступи щоб не злипались */
+.card,
+.section,
+.box,
+.block {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1100px;
+}
+
+/* кнопки – контрастні */
+button,
+.btn,
+.buy,
+.cta {
+  background: #FFD84D !important;
+  color: #000 !important;
+  border: 3px solid #000;
+  box-shadow: 0 6px 0 rgba(0,0,0,.25);
+  font-weight: 900;
+}
+
+/* текст */
+h1,h2,h3,h4,p,span {
+  color:#000;
+}
+
+/* CA блок */
+.ca {
+  background:#fff !important;
+}
+
+/* navbar трохи прозорий */
+.topbar,
+.navwrap {
+  background: rgba(255,255,255,0.95) !important;
+}
