@@ -1,54 +1,50 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>MONBOY</title>
-<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>MONBOY</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
 <header class="topbar">
-  <div class="navwrap">
-    <div class="left">
-      <div class="icon">MB</div>
-      <span>MONBOY</span>
+  <div class="nav">
+    <div class="logo">
+      <img src="monboy.png" alt="MONBOY"/>
+      <span>Monboy</span>
     </div>
-    <div class="right">
-      <a class="iconbtn" href="https://x.com/monboynfts" target="_blank">X</a>
-      <a class="iconbtn" href="https://t.me/monboynft" target="_blank">TG</a>
-      <a class="buy">BUY MONBOY</a>
+    <nav class="links">
+      <a href="#">ABOUT</a>
+      <a href="#">STORY</a>
+      <a href="#">HOW TO BUY</a>
+      <a href="#">TOKENOMICS</a>
+      <a href="#">FAQ</a>
+    </nav>
+    <div class="actions">
+      <a class="icon">TG</a>
+      <a class="icon">X</a>
+      <a class="buy">BUY NOW</a>
     </div>
   </div>
 </header>
 
 <main class="hero">
-  <img src="monboy.png" class="bgimg"/>
-  <div class="center">
-    <div class="title small">WELCOME TO</div>
-    <div class="title big">MONBOY</div>
-    <div class="title small">ISLAND</div>
-
-    <div class="buttons">
-      <button class="btn blue">BUY NOW</button>
-      <button class="btn white">CHART</button>
+  <div class="hero-inner">
+    <div class="title">
+      <span class="symbol">$</span>MONBOY<span class="bang">!</span>
     </div>
+  </div>
 
-    <div class="ca">
-      <span class="label">CA:</span>
-      <span class="addr">0xa4105C0509bb414074fB1C850c046f8FdB847777</span>
-      <button class="copy" onclick="copyCA()">⧉</button>
+  <div class="tape">
+    <div class="track">
+      <span>$MONBOY</span><span>$MONBOY</span><span>$MONBOY</span>
+      <span>$MONBOY</span><span>$MONBOY</span><span>$MONBOY</span>
+      <span>$MONBOY</span><span>$MONBOY</span><span>$MONBOY</span>
     </div>
   </div>
 </main>
-
-<script>
-function copyCA(){
-  navigator.clipboard.writeText("0xa4105C0509bb414074fB1C850c046f8FdB847777");
-  alert("Copied");
-}
-</script>
 
 </body>
 </html>
