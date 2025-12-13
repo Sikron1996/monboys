@@ -319,3 +319,25 @@ a{color:inherit; text-decoration:none}
   .mascot{min-height: auto}
   .grid{grid-template-columns: 1fr}
 }
+
+
+/* === MONBOY BACKGROUND IMAGE + DARK OVERLAY === */
+.hero{
+  background: none !important;
+}
+
+.hero::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:url("monboy.png") center/cover no-repeat;
+  z-index:-3;
+}
+
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,.35);
+  z-index:-2;
+}
